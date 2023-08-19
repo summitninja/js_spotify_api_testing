@@ -47,6 +47,9 @@ class SpotifyApi {
     ) {
       return await this._RefreshAccessToken();
     }
+
+    // The current token thats cached is likely valid so return it
+    return this.access_token;
   }
 
   async Search(query, type) {
