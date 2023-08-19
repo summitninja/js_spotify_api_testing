@@ -66,5 +66,9 @@ class SpotifyApi {
       });
   }
 }
+
+// initiate the client
+const client = new SpotifyApi(process.env.CLIENT_ID, process.env.CLIENT_SECRET);
+
 // export it as default for easy importing
-export default SpotifyApi;
+export default client;
